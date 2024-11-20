@@ -676,13 +676,13 @@ export function Composer(props: {
                     lineHeight: lineHeightTextareaMd,
                   }} />
 
-                {!showChatReplyTo && tokenLimit > 0 && (tokensComposer > 0 || (tokensHistory + tokensReponseMax) > 0) && (
-                  <TokenProgressbarMemo direct={tokensComposer} history={tokensHistory} responseMax={tokensReponseMax} limit={tokenLimit} tokenPriceIn={tokenPriceIn} tokenPriceOut={tokenPriceOut} />
-                )}
+                {/*{!showChatReplyTo && tokenLimit > 0 && (tokensComposer > 0 || (tokensHistory + tokensReponseMax) > 0) && (*/}
+                {/*  <TokenProgressbarMemo direct={tokensComposer} history={tokensHistory} responseMax={tokensReponseMax} limit={tokenLimit} tokenPriceIn={tokenPriceIn} tokenPriceOut={tokenPriceOut} />*/}
+                {/*)}*/}
 
-                {!showChatReplyTo && tokenLimit > 0 && (
-                  <TokenBadgeMemo direct={tokensComposer} history={tokensHistory} responseMax={tokensReponseMax} limit={tokenLimit} tokenPriceIn={tokenPriceIn} tokenPriceOut={tokenPriceOut} showCost={labsShowCost} showExcess absoluteBottomRight />
-                )}
+                {/*{!showChatReplyTo && tokenLimit > 0 && (*/}
+                {/*  <TokenBadgeMemo direct={tokensComposer} history={tokensHistory} responseMax={tokensReponseMax} limit={tokenLimit} tokenPriceIn={tokenPriceIn} tokenPriceOut={tokenPriceOut} showCost={labsShowCost} showExcess absoluteBottomRight />*/}
+                {/*)}*/}
 
               </Box>
 
@@ -842,13 +842,13 @@ export function Composer(props: {
               </ButtonGroup>
 
               {/* [desktop] secondary-top buttons */}
-              {isDesktop && showChatExtras && !assistantAbortible && (
-                <ButtonBeamMemo
-                  disabled={!props.conversationId || !chatLLMId || !llmAttachments.isOutputAttacheable}
-                  hasContent={!!composeText}
-                  onClick={handleSendTextBeamClicked}
-                />
-              )}
+              {/*{isDesktop && showChatExtras && !assistantAbortible && (*/}
+              {/*  <ButtonBeamMemo*/}
+              {/*    disabled={!props.conversationId || !chatLLMId || !llmAttachments.isOutputAttacheable}*/}
+              {/*    hasContent={!!composeText}*/}
+              {/*    onClick={handleSendTextBeamClicked}*/}
+              {/*  />*/}
+              {/*)}*/}
 
             </Box>
 
@@ -859,7 +859,7 @@ export function Composer(props: {
             {isDesktop && <Box sx={{ mt: 'auto', display: 'grid', gap: 1 }}>
 
               {/* [desktop] Call secondary button */}
-              {showChatExtras && <ButtonCallMemo disabled={!props.conversationId || !chatLLMId} onClick={handleCallClicked} />}
+              {/*{showChatExtras && <ButtonCallMemo disabled={!props.conversationId || !chatLLMId} onClick={handleCallClicked} />}*/}
 
               {/* [desktop] Draw Options secondary button */}
               {isDraw && <ButtonOptionsDraw onClick={handleDrawOptionsClicked} />}

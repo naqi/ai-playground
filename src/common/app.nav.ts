@@ -106,6 +106,7 @@ export const navItems: {
       route: '/call',
       hideDrawer: true,
       fullWidth: true,
+      _delete: true,
     },
     {
       name: 'Draw',
@@ -161,6 +162,7 @@ export const navItems: {
       // iconActive: Diversity2Icon,
       type: 'app',
       route: '/personas',
+      _delete: true,
       hideBar: true,
     },
     {
@@ -168,6 +170,7 @@ export const navItems: {
       icon: GrainIcon,
       type: 'app',
       route: '/tokens',
+      _delete: true,
       hideDrawer: true,
     },
     {
@@ -177,6 +180,7 @@ export const navItems: {
       route: '/dev/beam',
       hideDrawer: true,
       hideIcon: true,
+      _delete: true,
       isDev: true,
     },
     {
@@ -196,6 +200,7 @@ export const navItems: {
       route: '/link/chat/[chatLinkId]',
       landingRoute: '/link/chat/list',
       hideOnMobile: true,
+      _delete: true,
       hideIcon: hasNoChatLinkItems,
       hideNav: hasNoChatLinkItems,
     },
@@ -207,6 +212,7 @@ export const navItems: {
       route: '/news',
       hideBar: true,
       hideDrawer: true,
+      _delete: true,
     },
   ],
 
@@ -234,18 +240,18 @@ export const navItems: {
     //   icon: TwitterIcon,
     //   href: 'https://twitter.com',
     // },
-    {
-      type: 'extLink',
-      name: 'Discord',
-      icon: DiscordIcon,
-      href: Brand.URIs.SupportInvite,
-    },
-    {
-      type: 'extLink',
-      name: 'GitHub',
-      icon: GitHubIcon,
-      href: Brand.URIs.OpenRepo,
-    },
+    // {
+    //   type: 'extLink',
+    //   name: 'Discord',
+    //   icon: DiscordIcon,
+    //   href: Brand.URIs.SupportInvite,
+    // },
+    // {
+    //   type: 'extLink',
+    //   name: 'GitHub',
+    //   icon: GitHubIcon,
+    //   href: Brand.URIs.OpenRepo,
+    // },
   ],
 
 };
