@@ -9,7 +9,7 @@
 export const Brand = {
   Title: {
     Base: 'Injala AI Playground',
-    Common: (process.env.NODE_ENV === 'development' ? '[DEV] ' : '') + 'big-AGI',
+    Common: (process.env.NODE_ENV === 'development' ? '[DEV] ' : '') + 'Injala Playground',
   },
   Meta: {
     Description: 'Launch big-AGI to unlock the full potential of AI, with precise control over your data and models. Voice interface, AI personas, advanced features, and fun UX.',
